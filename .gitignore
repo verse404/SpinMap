@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Web (Next.js / Node)
+web/node_modules/
+web/.next/
+web/out/
+web/next-env.d.ts
+web/.env*
+web/npm-debug.log*
+
+# iOS (Xcode)
+ios/build/
+ios/DerivedData/
+ios/**/*.xcuserstate
+ios/**/xcuserdata/
+ios/**/*.xcscmblueprint
+ios/**/*.xccheckout
+ios/*.ipa
+ios/*.dSYM.zip
+ios/*.dSYM

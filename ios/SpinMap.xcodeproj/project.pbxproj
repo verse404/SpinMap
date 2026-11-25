@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F338F1B9652E2D6C1AA2F5B /* SpinMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840130784148DB915003FDC /* SpinMapApp.swift */; };
+		1A374C4CB76A9EED9F0FD962 /* RouteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A796BCA04503DAA75A7D87 /* RouteModels.swift */; };
+		4F1F3E5ED9F3CF4FBB6DFDD3 /* CyclingMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33526E3FF9C5FABF03D37261 /* CyclingMath.swift */; };
+		1B8D81079C1291D2824EFC1A /* BundleDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB221D8652728A6A86D7778 /* BundleDataLoader.swift */; };
+		BC07137385A024E589927EF5 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAF07E4A5E542E9E24F0BD6 /* LocationService.swift */; };
+		4765AD23357A831698C86E14 /* LiveServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0317C06AB656253242D38E8 /* LiveServices.swift */; };
+		707D8410B7A078062960F1A1 /* SpinMapStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FBC0D00685B3E75733F70 /* SpinMapStore.swift */; };
+		5D0005E22B2D4A78686306EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9E061E8D00B721DF77FC1 /* ContentView.swift */; };
+		A29DA60CD78EA7E33D905C5C /* ExploreTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E833DDEBBF90FE5CBE6A562 /* ExploreTabView.swift */; };
+		40243DD58E5ED811CEDBDBC4 /* ElevationScrubberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E17B20CD3A5C01EDE4C418A /* ElevationScrubberView.swift */; };
+		208217ADD367C2AAA242CF15 /* RouteDesignerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8592CFD835CA61168A34082 /* RouteDesignerTabView.swift */; };
+		49A6494E050DB33CA7F40A23 /* SavedTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8F19ED682CA6134413452F /* SavedTabView.swift */; };
+		F37726810C000303A02FA3E9 /* SupportSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF3D5E3146AD2CB4D884D02 /* SupportSheets.swift */; };
+		D2C499E1554A042DE28155CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2529B3A2515C44E68E24A83C /* Assets.xcassets */; };
+		40CAF62C45041FB8C8463B0C /* RoutesBundle.json in Resources */ = {isa = PBXBuildFile; fileRef = 42C8DAF18D9191755614A453 /* RoutesBundle.json */; };
+		0B09FCE49A7CE421AEDD325A /* AnchorsBundle.json in Resources */ = {isa = PBXBuildFile; fileRef = B71749A26980AAF980B409A6 /* AnchorsBundle.json */; };
+		6A5CBAFF501AA8398E625FE0 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5E1B6793B886EF8488D060E6 /* PrivacyInfo.xcprivacy */; };
+		7AD86071AE68A6884AB5C04A /* SpinMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB7F76BFF7350C27AEE64E /* SpinMapTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F16FB0A5134E14CCABD9B6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E152F5FB2506E6ED21BC1CBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FB4CFF6289318F146562977;
+			remoteInfo = SpinMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E0099AD0E12C149A58424E /* SpinMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF43EE1E6D1D063BF69C3CA7 /* SpinMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpinMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4840130784148DB915003FDC /* SpinMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpinMapApp.swift"; sourceTree = "<group>"; };
+		59A796BCA04503DAA75A7D87 /* RouteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RouteModels.swift"; sourceTree = "<group>"; };
+		33526E3FF9C5FABF03D37261 /* CyclingMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CyclingMath.swift"; sourceTree = "<group>"; };
+		AEB221D8652728A6A86D7778 /* BundleDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BundleDataLoader.swift"; sourceTree = "<group>"; };
+		EDAF07E4A5E542E9E24F0BD6 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationService.swift"; sourceTree = "<group>"; };
+		A0317C06AB656253242D38E8 /* LiveServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LiveServices.swift"; sourceTree = "<group>"; };
+		BC4FBC0D00685B3E75733F70 /* SpinMapStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpinMapStore.swift"; sourceTree = "<group>"; };
+		87B9E061E8D00B721DF77FC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView.swift"; sourceTree = "<group>"; };
+		8E833DDEBBF90FE5CBE6A562 /* ExploreTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExploreTabView.swift"; sourceTree = "<group>"; };
+		7E17B20CD3A5C01EDE4C418A /* ElevationScrubberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElevationScrubberView.swift"; sourceTree = "<group>"; };
+		C8592CFD835CA61168A34082 /* RouteDesignerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RouteDesignerTabView.swift"; sourceTree = "<group>"; };
+		8C8F19ED682CA6134413452F /* SavedTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedTabView.swift"; sourceTree = "<group>"; };
+		BBF3D5E3146AD2CB4D884D02 /* SupportSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SupportSheets.swift"; sourceTree = "<group>"; };
+		2529B3A2515C44E68E24A83C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets"; sourceTree = "<group>"; };
+		42C8DAF18D9191755614A453 /* RoutesBundle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "RoutesBundle.json"; sourceTree = "<group>"; };
+		B71749A26980AAF980B409A6 /* AnchorsBundle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AnchorsBundle.json"; sourceTree = "<group>"; };
+		5E1B6793B886EF8488D060E6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		422B072FCEB0E12BFDD5F756 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info.plist"; sourceTree = "<group>"; };
+		94BB7F76BFF7350C27AEE64E /* SpinMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpinMapTests.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F001BC2AF9EB5498B3360756 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B208DB47DA230159E08E40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADCF10F76EBF2A74473E9DC4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				61082EC9C7B57628ADD8874E /* SpinMap */,
+				549353C05F3E304E82D57259 /* SpinMapTests */,
+				5151B46607EBC8890D8DFCC2 /* Products */,
+			);
+			name = "Main";
+			sourceTree = "<group>";
+		};
+		5151B46607EBC8890D8DFCC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00E0099AD0E12C149A58424E /* SpinMap.app */,
+				FF43EE1E6D1D063BF69C3CA7 /* SpinMapTests.xctest */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		61082EC9C7B57628ADD8874E /* SpinMap */ = {
+			isa = PBXGroup;
+			children = (
+				BF657CFE8769AAE6C0570C29 /* Models */,
+				6EE67047A4B2648DDBB08231 /* Services */,
+				529389268FE012CA42456275 /* ViewModels */,
+				58492F208780FA5EF3807E8F /* Views */,
+				A024F06580C79B7582C3806A /* Resources */,
+				4840130784148DB915003FDC /* SpinMapApp.swift */,
+				5E1B6793B886EF8488D060E6 /* PrivacyInfo.xcprivacy */,
+				422B072FCEB0E12BFDD5F756 /* Info.plist */,
+			);
+			path = "SpinMap";
+			sourceTree = "<group>";
+		};
+		BF657CFE8769AAE6C0570C29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				59A796BCA04503DAA75A7D87 /* RouteModels.swift */,
+			);
+			path = "Models";
+			sourceTree = "<group>";
+		};
+		6EE67047A4B2648DDBB08231 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				33526E3FF9C5FABF03D37261 /* CyclingMath.swift */,
+				AEB221D8652728A6A86D7778 /* BundleDataLoader.swift */,
+				EDAF07E4A5E542E9E24F0BD6 /* LocationService.swift */,
+				A0317C06AB656253242D38E8 /* LiveServices.swift */,
+			);
+			path = "Services";
+			sourceTree = "<group>";
+		};
+		529389268FE012CA42456275 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BC4FBC0D00685B3E75733F70 /* SpinMapStore.swift */,
+			);
+			path = "ViewModels";
+			sourceTree = "<group>";
+		};
+		58492F208780FA5EF3807E8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87B9E061E8D00B721DF77FC1 /* ContentView.swift */,
+				8E833DDEBBF90FE5CBE6A562 /* ExploreTabView.swift */,
+				7E17B20CD3A5C01EDE4C418A /* ElevationScrubberView.swift */,
+				C8592CFD835CA61168A34082 /* RouteDesignerTabView.swift */,
+				8C8F19ED682CA6134413452F /* SavedTabView.swift */,
+				BBF3D5E3146AD2CB4D884D02 /* SupportSheets.swift */,
+			);
+			path = "Views";
+			sourceTree = "<group>";
+		};
+		A024F06580C79B7582C3806A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2529B3A2515C44E68E24A83C /* Assets.xcassets */,
+				42C8DAF18D9191755614A453 /* RoutesBundle.json */,
+				B71749A26980AAF980B409A6 /* AnchorsBundle.json */,
+			);
+			path = "Resources";
+			sourceTree = "<group>";
+		};
+		549353C05F3E304E82D57259 /* SpinMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				94BB7F76BFF7350C27AEE64E /* SpinMapTests.swift */,
+			);
+			path = "SpinMapTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FB4CFF6289318F146562977 /* SpinMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23746EFE221170E24101FE05 /* Build configuration list for PBXNativeTarget "SpinMap" */;
+			buildPhases = (
+				8682261519D15BD64A9E5D31 /* Sources */,
+				F001BC2AF9EB5498B3360756 /* Frameworks */,
+				E28FAD8F60ECDED9B4AD087A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpinMap;
+			productName = SpinMap;
+			productReference = 00E0099AD0E12C149A58424E /* SpinMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A61CAE3A321F9E6B169EDC6 /* SpinMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48751F087EE6031B0313610C /* Build configuration list for PBXNativeTarget "SpinMapTests" */;
+			buildPhases = (
+				29BEEA3D856852A8CC3247ED /* Sources */,
+				D6B208DB47DA230159E08E40 /* Frameworks */,
+				96B4702EF39C73C4DCF44E6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				201DB22CDFF2677EB768AC1E /* PBXTargetDependency */,
+			);
+			name = SpinMapTests;
+			productName = SpinMapTests;
+			productReference = FF43EE1E6D1D063BF69C3CA7 /* SpinMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E152F5FB2506E6ED21BC1CBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					4FB4CFF6289318F146562977 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					1A61CAE3A321F9E6B169EDC6 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 4FB4CFF6289318F146562977;
+					};
+				};
+			};
+			buildConfigurationList = 3D29D9F3A882C4202964FB56 /* Build configuration list for PBXProject "SpinMap" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADCF10F76EBF2A74473E9DC4;
+			productRefGroup = 5151B46607EBC8890D8DFCC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FB4CFF6289318F146562977 /* SpinMap */,
+				1A61CAE3A321F9E6B169EDC6 /* SpinMapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E28FAD8F60ECDED9B4AD087A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C499E1554A042DE28155CA /* Assets.xcassets in Resources */,
+				40CAF62C45041FB8C8463B0C /* RoutesBundle.json in Resources */,
+				0B09FCE49A7CE421AEDD325A /* AnchorsBundle.json in Resources */,
+				6A5CBAFF501AA8398E625FE0 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96B4702EF39C73C4DCF44E6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8682261519D15BD64A9E5D31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F338F1B9652E2D6C1AA2F5B /* SpinMapApp.swift in Sources */,
+				1A374C4CB76A9EED9F0FD962 /* RouteModels.swift in Sources */,
+				4F1F3E5ED9F3CF4FBB6DFDD3 /* CyclingMath.swift in Sources */,
+				1B8D81079C1291D2824EFC1A /* BundleDataLoader.swift in Sources */,
+				BC07137385A024E589927EF5 /* LocationService.swift in Sources */,
+				4765AD23357A831698C86E14 /* LiveServices.swift in Sources */,
+				707D8410B7A078062960F1A1 /* SpinMapStore.swift in Sources */,
+				5D0005E22B2D4A78686306EC /* ContentView.swift in Sources */,
+				A29DA60CD78EA7E33D905C5C /* ExploreTabView.swift in Sources */,
+				40243DD58E5ED811CEDBDBC4 /* ElevationScrubberView.swift in Sources */,
+				208217ADD367C2AAA242CF15 /* RouteDesignerTabView.swift in Sources */,
+				49A6494E050DB33CA7F40A23 /* SavedTabView.swift in Sources */,
+				F37726810C000303A02FA3E9 /* SupportSheets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29BEEA3D856852A8CC3247ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AD86071AE68A6884AB5C04A /* SpinMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		201DB22CDFF2677EB768AC1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FB4CFF6289318F146562977 /* SpinMap */;
+			targetProxy = 7F16FB0A5134E14CCABD9B6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		855D4B0C75ECD556474FD8F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4E74312DBBD620AE1CB5D771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		967DE5DAE8F9C3546488D3FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SpinMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spinmap.cycling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70A5F3AAC43D0790B57ED51A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SpinMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spinmap.cycling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		616BE68C55EDB13288068B2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spinmap.cycling.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpinMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpinMap";
+			};
+			name = Debug;
+		};
+		E78E6D81968C56020FDC7FF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spinmap.cycling.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpinMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SpinMap";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D29D9F3A882C4202964FB56 /* Build configuration list for PBXProject "SpinMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				855D4B0C75ECD556474FD8F5 /* Debug */,
+				4E74312DBBD620AE1CB5D771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23746EFE221170E24101FE05 /* Build configuration list for PBXNativeTarget "SpinMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				967DE5DAE8F9C3546488D3FD /* Debug */,
+				70A5F3AAC43D0790B57ED51A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48751F087EE6031B0313610C /* Build configuration list for PBXNativeTarget "SpinMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616BE68C55EDB13288068B2F /* Debug */,
+				E78E6D81968C56020FDC7FF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E152F5FB2506E6ED21BC1CBB /* Project object */;
+}

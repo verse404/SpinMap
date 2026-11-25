@@ -1,0 +1,1032 @@
+{
+  "melbourne": [
+    {
+      "id": "albert-swans",
+      "name": "Albert Park Black Swan Lagoon",
+      "icon": "🦢",
+      "lngLat": [
+        144.9718,
+        -37.8465
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/albert.jpg",
+      "note": "Pancake-flat palm promenade with mirror CBD skyline reflections",
+      "photoName": "albert"
+    },
+    {
+      "id": "port-melb-pier",
+      "name": "Port Melbourne Lagoon & Foreshore",
+      "icon": "🌊",
+      "lngLat": [
+        144.9435,
+        -37.8432
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/bay.jpg",
+      "note": "Wide sea-level coastal shared path along Port Phillip Bay",
+      "photoName": "bay"
+    },
+    {
+      "id": "stkilda-pier",
+      "name": "St Kilda Pier & Foreshore Path",
+      "icon": "📸",
+      "lngLat": [
+        144.9735,
+        -37.8645
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/bay.jpg",
+      "note": "Car-free bayside boardwalk with penguin breakwater views",
+      "photoName": "bay"
+    },
+    {
+      "id": "brighton-boxes",
+      "name": "Brighton Bathing Boxes",
+      "icon": "📸",
+      "lngLat": [
+        144.9869,
+        -37.9182
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/bay.jpg",
+      "note": "Iconic painted beach huts near Brighton Beach train station",
+      "photoName": "bay"
+    },
+    {
+      "id": "half-moon-bay",
+      "name": "Half Moon Bay Red Cliffs",
+      "icon": "☕",
+      "lngLat": [
+        145.0098,
+        -37.9698
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/cafe.jpg",
+      "note": "Sheltered sandy cove & Sandringham train line access",
+      "photoName": "cafe"
+    },
+    {
+      "id": "mordialloc-creek",
+      "name": "Mordialloc Creek & Beach",
+      "icon": "🚆",
+      "lngLat": [
+        145.0865,
+        -38.0068
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/bay.jpg",
+      "note": "Flat coastal finish with direct Frankston line train home",
+      "photoName": "bay"
+    },
+    {
+      "id": "williamstown-strand",
+      "name": "Williamstown Strand & Gem Pier",
+      "icon": "🌊",
+      "lngLat": [
+        144.9045,
+        -37.8615
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/bay.jpg",
+      "note": "Dead-flat western foreshore with panoramic CBD across the bay",
+      "photoName": "bay"
+    },
+    {
+      "id": "maribyrnong-boathouse",
+      "name": "Maribyrnong River Boathouse",
+      "icon": "☕",
+      "lngLat": [
+        144.8965,
+        -37.7775
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/cafe.jpg",
+      "note": "Peaceful riverfront tea house along the car-free Maribyrnong Trail",
+      "photoName": "cafe"
+    },
+    {
+      "id": "docklands-promenade",
+      "name": "Docklands Victoria Harbour",
+      "icon": "🌊",
+      "lngLat": [
+        144.9428,
+        -37.8182
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/albert.jpg",
+      "note": "Smooth waterfront promenade linking Capital City & Moonee Ponds trails",
+      "photoName": "albert"
+    },
+    {
+      "id": "royal-park-grasslands",
+      "name": "Royal Park Native Grasslands",
+      "icon": "🌿",
+      "lngLat": [
+        144.9515,
+        -37.7848
+      ],
+      "terrain": "rolling",
+      "carFree": true,
+      "hasCafe": false,
+      "hasWater": false,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/yarra.jpg",
+      "note": "Car-free bushland loop with sweeping city skyline views",
+      "photoName": "yarra"
+    },
+    {
+      "id": "canning-greenway",
+      "name": "Canning St Leafy Greenway (Carlton)",
+      "icon": "☕",
+      "lngLat": [
+        144.9742,
+        -37.7885
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": false,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/greenway.jpg",
+      "note": "Melbourne’s favourite plane-tree bike boulevard & terrace cafes",
+      "photoName": "greenway"
+    },
+    {
+      "id": "ceres-merri-creek",
+      "name": "CERES Eco-Park & Merri Creek Trail",
+      "icon": "☕",
+      "lngLat": [
+        144.9832,
+        -37.7658
+      ],
+      "terrain": "rolling",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/yarra.jpg",
+      "note": "Organic garden cafe tucked along the car-free Merri Creek valley",
+      "photoName": "yarra"
+    },
+    {
+      "id": "abbotsford-convent",
+      "name": "Abbotsford Convent & Dights Falls",
+      "icon": "☕",
+      "lngLat": [
+        145.0048,
+        -37.8018
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/cafe.jpg",
+      "note": "Historic riverside bakery courtyard beside Yarra rapids",
+      "photoName": "cafe"
+    },
+    {
+      "id": "studley-boathouse",
+      "name": "Studley Park Boathouse & Boulie Ridge",
+      "icon": "📸",
+      "lngLat": [
+        145.0115,
+        -37.7975
+      ],
+      "terrain": "hilly",
+      "carFree": false,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/boulie.jpg",
+      "note": "Rolling bushland ridge road above misty Yarra bends",
+      "photoName": "boulie"
+    },
+    {
+      "id": "fairfield-boathouse",
+      "name": "Fairfield Park Boathouse",
+      "icon": "☕",
+      "lngLat": [
+        145.0155,
+        -37.7875
+      ],
+      "terrain": "rolling",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/cafe.jpg",
+      "note": "Sunny timber deck over the Yarra along the Main Yarra Trail",
+      "photoName": "cafe"
+    },
+    {
+      "id": "heide-meadow",
+      "name": "Heide Sculpture Park & Yarra Flats",
+      "icon": "🎨",
+      "lngLat": [
+        145.0848,
+        -37.7592
+      ],
+      "terrain": "rolling",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": true,
+      "photoUrl": "/images/gravel.jpg",
+      "note": "Sculpture lawns & fine gravel gumtree trails near Heidelberg",
+      "photoName": "gravel"
+    },
+    {
+      "id": "westerfolds-kangaroos",
+      "name": "Westerfolds Kangaroo Parklands",
+      "icon": "🦘",
+      "lngLat": [
+        145.1325,
+        -37.7465
+      ],
+      "terrain": "rolling",
+      "carFree": true,
+      "hasCafe": false,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": true,
+      "photoUrl": "/images/gravel.jpg",
+      "note": "100% car-free eucalyptus bushland with grazing kangaroos",
+      "photoName": "gravel"
+    },
+    {
+      "id": "herring-botanic",
+      "name": "Botanic Gardens & Herring Island Trail",
+      "icon": "🌿",
+      "lngLat": [
+        144.9945,
+        -37.8305
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/yarra.jpg",
+      "note": "Flat riverside shared path linking Southbank to Burnley",
+      "photoName": "yarra"
+    },
+    {
+      "id": "gardiners-kooyong",
+      "name": "Gardiners Creek Trail (Kooyong / Glen Iris)",
+      "icon": "🌳",
+      "lngLat": [
+        145.0495,
+        -37.8525
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/yarra.jpg",
+      "note": "Smooth creek-side parkland spine parallel to Glen Waverley train line",
+      "photoName": "yarra"
+    },
+    {
+      "id": "gardiners-boxhill",
+      "name": "Gardiners Creek & Box Hill Bushland",
+      "icon": "🌿",
+      "lngLat": [
+        145.1185,
+        -37.8345
+      ],
+      "terrain": "rolling",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/yarra.jpg",
+      "note": "Leafy eastern creek corridor linking Deakin & Box Hill",
+      "photoName": "yarra"
+    },
+    {
+      "id": "djerring-caulfield",
+      "name": "Djerring Skyrail Greenway (Caulfield–Carnegie)",
+      "icon": "🚆",
+      "lngLat": [
+        145.0545,
+        -37.8845
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": false,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/greenway.jpg",
+      "note": "Rail-grade flat linear park path with zero road traffic",
+      "photoName": "greenway"
+    },
+    {
+      "id": "djerring-clayton",
+      "name": "Djerring Trail Oakleigh–Clayton Spine",
+      "icon": "🌳",
+      "lngLat": [
+        145.1125,
+        -37.9165
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": false,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/greenway.jpg",
+      "note": "Wide separated commuter & leisure path alongside Cranbourne/Pakenham stations",
+      "photoName": "greenway"
+    },
+    {
+      "id": "jells-park-lake",
+      "name": "Jells Park Lake & Dandenong Creek Trail",
+      "icon": "🦢",
+      "lngLat": [
+        145.1925,
+        -37.8965
+      ],
+      "terrain": "rolling",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": true,
+      "photoUrl": "/images/gravel.jpg",
+      "note": "Expansive lakeside cafe & car-free Dandenong Creek bushland paths",
+      "photoName": "gravel"
+    },
+    {
+      "id": "dandenongs-sassafras",
+      "name": "Dandenongs 1-in-20 Mountain Ash Climb",
+      "icon": "⛰️",
+      "lngLat": [
+        145.3445,
+        -37.8625
+      ],
+      "terrain": "hilly",
+      "carFree": false,
+      "hasCafe": true,
+      "hasWater": false,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/dandenongs.jpg",
+      "note": "Iconic steady 4% climb through misty tree-fern gullies to Sassafras",
+      "photoName": "dandenongs"
+    },
+    {
+      "id": "altona-coastal",
+      "name": "Altona Beach & Hobsons Bay Coastal Trail",
+      "icon": "🌊",
+      "lngLat": [
+        144.8295,
+        -37.8712
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/bay.jpg",
+      "note": "Pancake-flat western coastal trail past Truganina wetlands & Altona Pier",
+      "photoName": "bay"
+    },
+    {
+      "id": "frankston-foreshore",
+      "name": "Frankston Pier & Bayside Boardwalk",
+      "icon": "🌊",
+      "lngLat": [
+        145.1185,
+        -38.1442
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/bay.jpg",
+      "note": "Southern bayside foreshore promenade with direct Frankston line train",
+      "photoName": "bay"
+    },
+    {
+      "id": "ringwood-eastlink",
+      "name": "Mullum Mullum & EastLink Creek Trail",
+      "icon": "🌳",
+      "lngLat": [
+        145.2225,
+        -37.8135
+      ],
+      "terrain": "rolling",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/yarra.jpg",
+      "note": "100% separated bushland greenway connecting Ringwood to Yarra trails",
+      "photoName": "yarra"
+    },
+    {
+      "id": "lilydale-warburton",
+      "name": "Lilydale to Warburton Rail Trail",
+      "icon": "🌿",
+      "lngLat": [
+        145.3475,
+        -37.7565
+      ],
+      "terrain": "rolling",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": false,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": true,
+      "photoUrl": "/images/gravel.jpg",
+      "note": "Scenic crushed-granite Yarra Valley rail trail starting at Lilydale Station",
+      "photoName": "gravel"
+    },
+    {
+      "id": "darebin-bundoora",
+      "name": "Darebin Creek Parklands & Bundoora",
+      "icon": "🦘",
+      "lngLat": [
+        145.0525,
+        -37.7215
+      ],
+      "terrain": "rolling",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": true,
+      "photoUrl": "/images/gravel.jpg",
+      "note": "Quiet northern creek corridor linking Alphington to Darebin wetlands",
+      "photoName": "gravel"
+    },
+    {
+      "id": "eltham-diamond-creek",
+      "name": "Eltham Trestle & Diamond Creek Trail",
+      "icon": "🚆",
+      "lngLat": [
+        145.1495,
+        -37.7365
+      ],
+      "terrain": "rolling",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": true,
+      "photoUrl": "/images/yarra.jpg",
+      "note": "Heritage timber trestle bridge & gumtree trails on the Hurstbridge line",
+      "photoName": "yarra"
+    }
+  ],
+  "sydney": [
+    {
+      "id": "syd-opera-quay",
+      "name": "Sydney Opera House & Circular Quay",
+      "icon": "📸",
+      "lngLat": [
+        151.2135,
+        -33.8588
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-harbour.jpg",
+      "note": "Iconic harbour promenade with ferry & train connections",
+      "photoName": "sydney-harbour"
+    },
+    {
+      "id": "syd-barangaroo",
+      "name": "Barangaroo Reserve Waterfront",
+      "icon": "🌊",
+      "lngLat": [
+        151.2015,
+        -33.8582
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-harbour.jpg",
+      "note": "Sandstone foreshore headland overlooking Darling Harbour",
+      "photoName": "sydney-harbour"
+    },
+    {
+      "id": "syd-harbour-bridge",
+      "name": "Harbour Bridge Cycleway & Milsons Point",
+      "icon": "🌉",
+      "lngLat": [
+        151.2108,
+        -33.8475
+      ],
+      "terrain": "rolling",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-harbour.jpg",
+      "note": "Car-free dedicated Harbour Bridge path above Sydney Cove",
+      "photoName": "sydney-harbour"
+    },
+    {
+      "id": "syd-centennial-ponds",
+      "name": "Centennial Park Grand Drive & Ponds",
+      "icon": "🌳",
+      "lngLat": [
+        151.2335,
+        -33.8975
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-centennial.jpg",
+      "note": "Wide dedicated park cycling loop framed by giant Moreton Bay figs",
+      "photoName": "sydney-centennial"
+    },
+    {
+      "id": "syd-bourke-st",
+      "name": "Surry Hills Bourke St Bikeway",
+      "icon": "☕",
+      "lngLat": [
+        151.2152,
+        -33.8885
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": false,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-centennial.jpg",
+      "note": "Tree-shaded separated greenway surrounded by specialty bakeries",
+      "photoName": "sydney-centennial"
+    },
+    {
+      "id": "syd-bondi-beach",
+      "name": "Bondi Beach Promenade",
+      "icon": "🌊",
+      "lngLat": [
+        151.2745,
+        -33.8915
+      ],
+      "terrain": "rolling",
+      "carFree": false,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-botany.jpg",
+      "note": "World-famous surf beach crescent & North Bondi headland cafes",
+      "photoName": "sydney-botany"
+    },
+    {
+      "id": "syd-coogee-bay",
+      "name": "Coogee Beach & Coastal Park",
+      "icon": "☕",
+      "lngLat": [
+        151.2575,
+        -33.9212
+      ],
+      "terrain": "rolling",
+      "carFree": false,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-botany.jpg",
+      "note": "Sheltered Eastern Suburbs beach & ocean-pool promenade",
+      "photoName": "sydney-botany"
+    },
+    {
+      "id": "syd-la-perouse",
+      "name": "La Perouse & Bare Island Headland",
+      "icon": "📸",
+      "lngLat": [
+        151.2325,
+        -33.9885
+      ],
+      "terrain": "rolling",
+      "carFree": false,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-botany.jpg",
+      "note": "Scenic Botany Bay peninsula & historic timber bridge to Bare Island",
+      "photoName": "sydney-botany"
+    },
+    {
+      "id": "syd-bay-run",
+      "name": "The Bay Run (Iron Cove Waterfront)",
+      "icon": "🌊",
+      "lngLat": [
+        151.1485,
+        -33.8668
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-bayrun.jpg",
+      "note": "Pancake-flat 7 km car-free harbour foreshore loop",
+      "photoName": "sydney-bayrun"
+    },
+    {
+      "id": "syd-glebe-foreshore",
+      "name": "Glebe Foreshore & Blackwattle Bay",
+      "icon": "☕",
+      "lngLat": [
+        151.1825,
+        -33.8735
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-bayrun.jpg",
+      "note": "Flat waterfront boardwalk looking across to Anzac Bridge",
+      "photoName": "sydney-bayrun"
+    },
+    {
+      "id": "syd-cooks-river",
+      "name": "Cooks River Cycleway & Tempe Reserve",
+      "icon": "🌳",
+      "lngLat": [
+        151.1558,
+        -33.9225
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-botany.jpg",
+      "note": "Smooth off-road river spine linking Inner West to Botany Bay",
+      "photoName": "sydney-botany"
+    },
+    {
+      "id": "syd-brighton-le-sands",
+      "name": "Brighton-Le-Sands Palm Promenade",
+      "icon": "🌴",
+      "lngLat": [
+        151.1562,
+        -33.9598
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-botany.jpg",
+      "note": "Sea-level sandy beach shared path along Botany Bay",
+      "photoName": "sydney-botany"
+    },
+    {
+      "id": "syd-dolls-point",
+      "name": "Dolls Point & Sandringham Cove",
+      "icon": "🌊",
+      "lngLat": [
+        151.1475,
+        -33.9985
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-botany.jpg",
+      "note": "Peaceful bayside peninsula cafe & sandy shoreline",
+      "photoName": "sydney-botany"
+    },
+    {
+      "id": "syd-cronulla-esplanade",
+      "name": "Cronulla Beach & Esplanade",
+      "icon": "🚆",
+      "lngLat": [
+        151.1555,
+        -34.0545
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-botany.jpg",
+      "note": "Oceanfront coastal walk & direct T4 train return",
+      "photoName": "sydney-botany"
+    },
+    {
+      "id": "syd-olympic-park",
+      "name": "Sydney Olympic Park & Badu Mangroves",
+      "icon": "🌿",
+      "lngLat": [
+        151.0848,
+        -33.8355
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-narrabeen.jpg",
+      "note": "35 km of pancake-flat car-free parkland trails & ferry wharf",
+      "photoName": "sydney-narrabeen"
+    },
+    {
+      "id": "syd-meadowbank-bridge",
+      "name": "Meadowbank Bridge & Parramatta River Path",
+      "icon": "🚆",
+      "lngLat": [
+        151.0865,
+        -33.8185
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-bayrun.jpg",
+      "note": "Dedicated cyclist-only heritage bridge over Parramatta River",
+      "photoName": "sydney-bayrun"
+    },
+    {
+      "id": "syd-parramatta-park",
+      "name": "Parramatta Park Heritage Loop",
+      "icon": "🌳",
+      "lngLat": [
+        150.9965,
+        -33.8125
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-centennial.jpg",
+      "note": "Smooth dedicated cycling lane through heritage parklands",
+      "photoName": "sydney-centennial"
+    },
+    {
+      "id": "syd-balmoral-beach",
+      "name": "Balmoral Beach Esplanade",
+      "icon": "☕",
+      "lngLat": [
+        151.2515,
+        -33.8255
+      ],
+      "terrain": "rolling",
+      "carFree": false,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-harbour.jpg",
+      "note": "Calm harbour beach & iconic bather’s pavilion cafes",
+      "photoName": "sydney-harbour"
+    },
+    {
+      "id": "syd-manly-beach",
+      "name": "Manly Corso & Shelly Beach",
+      "icon": "⛴️",
+      "lngLat": [
+        151.2875,
+        -33.7985
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-botany.jpg",
+      "note": "Ferry-connected coastal beach path & marine reserve cove",
+      "photoName": "sydney-botany"
+    },
+    {
+      "id": "syd-narrabeen-lagoon",
+      "name": "Narrabeen Lagoon Gravel & Boardwalk",
+      "icon": "🌿",
+      "lngLat": [
+        151.2838,
+        -33.7285
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": true,
+      "photoUrl": "/images/sydney-narrabeen.jpg",
+      "note": "100% car-free flat lagoon gravel & timber boardwalk loop",
+      "photoName": "sydney-narrabeen"
+    },
+    {
+      "id": "syd-lane-cove-np",
+      "name": "Lane Cove National Park Riverside",
+      "icon": "🌿",
+      "lngLat": [
+        151.1445,
+        -33.7885
+      ],
+      "terrain": "rolling",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": true,
+      "photoUrl": "/images/sydney-narrabeen.jpg",
+      "note": "Shaded bushland valley beside tranquil river weir",
+      "photoName": "sydney-narrabeen"
+    },
+    {
+      "id": "syd-akuna-bay",
+      "name": "Ku-ring-gai Chase & Akuna Bay Marina",
+      "icon": "⛰️",
+      "lngLat": [
+        151.2412,
+        -33.6472
+      ],
+      "terrain": "hilly",
+      "carFree": false,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-akuna.jpg",
+      "note": "Sydney’s classic national park hill climb & cove marina cafe",
+      "photoName": "sydney-akuna"
+    },
+    {
+      "id": "syd-bobbin-head",
+      "name": "Bobbin Head National Park Gorge",
+      "icon": "⛰️",
+      "lngLat": [
+        151.1585,
+        -33.6605
+      ],
+      "terrain": "hilly",
+      "carFree": false,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": true,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-akuna.jpg",
+      "note": "Iconic sweeping bushland climb & waterside marina near Turramurra",
+      "photoName": "sydney-akuna"
+    },
+    {
+      "id": "syd-kurnell-kamay",
+      "name": "Kamay Botany Bay & Kurnell Coast",
+      "icon": "🌊",
+      "lngLat": [
+        151.2165,
+        -34.0065
+      ],
+      "terrain": "flat",
+      "carFree": true,
+      "hasCafe": true,
+      "hasWater": true,
+      "tramSafe": true,
+      "hasTrain": false,
+      "isGravel": false,
+      "photoUrl": "/images/sydney-botany.jpg",
+      "note": "Dead-flat coastal bikeway across sand dunes to Cape Solander",
+      "photoName": "sydney-botany"
+    }
+  ]
+}
