@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "SpinMap — Visual cycling route explorer with custom ride designer, dedicated bike lanes, and 1-tap Google Maps navigation.",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "next dev --hostname 127.0.0.1 --port 3000",
     "build": "next build",

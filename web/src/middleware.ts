@@ -4,17 +4,33 @@ import { checkRateLimit } from '@/lib/security';
 const READ_METHODS = new Set(['GET', 'HEAD', 'OPTIONS']);
 const POST_ALLOWED_PATHS = new Set(['/api/v1/design-route', '/api/v1/reroute']);
 
-function isTrustedOrigin(origin: string, requestOrigin: string): boolean {
-  if (origin === requestOrigin) return true;
+function isTrustedOrigin(origin: string, request: NextRequest): boolean {
+  if (origin === request.nextUrl.origin) return true;
+
+  const renderUrl = process.env.RENDER_EXTERNAL_URL?.trim().replace(/\/+$/, '');
+  if (renderUrl && origin === renderUrl) return true;
+
   const extraOrigins = (process.env.ALLOWED_ORIGINS || '')
     .split(',')
-    .map((s) => s.trim())
+    .map((s) => s.trim().replace(/\/+$/, ''))
     .filter(Boolean);
   if (extraOrigins.includes(origin)) return true;
+
   try {
     const parsed = new URL(origin);
-    const host = parsed.hostname.toLowerCase();
-    return host === '127.0.0.1' || host === 'localhost';
+    const originHost = parsed.host.toLowerCase();
+    const originHostname = parsed.hostname.toLowerCase();
+    if (originHostname === '127.0.0.1' || originHostname === 'localhost') {
+      return true;
+    }
+
+    // Support reverse proxies (e.g. Render, Vercel, Cloud Run) forwarding the public Host
+    const forwardedHost = request.headers.get('x-forwarded-host')?.split(',')[0].trim().toLowerCase();
+    const hostHeader = request.headers.get('host')?.trim().toLowerCase();
+    if (forwardedHost && originHost === forwardedHost) return true;
+    if (hostHeader && originHost === hostHeader) return true;
+
+    return false;
   } catch {
     return false;
   }
@@ -41,7 +57,7 @@ export function middleware(request: NextRequest): NextResponse {
     }
 
     const origin = request.headers.get('origin');
-    if (origin && !isTrustedOrigin(origin, request.nextUrl.origin)) {
+    if (origin && !isTrustedOrigin(origin, request)) {
       return NextResponse.json({ error: 'Cross-origin access denied.' }, { status: 403 });
     }
   }

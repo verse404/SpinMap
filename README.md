@@ -21,7 +21,13 @@ Discover curated Melbourne and Sydney bikeway loops, design custom routes starti
 
 ## Quick Start
 
-### Web App (`web/`)
+### Deploy Web App to Render (1-Click Free Blueprint)
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/verse404/SpinMap)
+
+Uses [`render.yaml`](render.yaml) (`rootDir: web`, Node 20, auto-generated `SPINMAP_INTERNAL_SECRET`, health check on `/`, and auto-deploy on push to `main`).
+
+### Run Web App Locally (`web/`)
 
 Requires Node.js 20+:
 
