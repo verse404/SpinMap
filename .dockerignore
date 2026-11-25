@@ -1,0 +1,10 @@
+.git
+.gitignore
+README.md
+ios/
+web/node_modules/
+web/.next/
+web/out/
+web/.env*
+**/*.log
+.DS_Store

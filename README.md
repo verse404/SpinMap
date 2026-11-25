@@ -25,7 +25,7 @@ Discover curated Melbourne and Sydney bikeway loops, design custom routes starti
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/verse404/SpinMap)
 
-Uses [`render.yaml`](render.yaml) (`rootDir: web`, Node 20, auto-generated `SPINMAP_INTERNAL_SECRET`, health check on `/`, and auto-deploy on push to `main`).
+Uses [`render.yaml`](render.yaml) + [`Dockerfile`](Dockerfile) (multi-stage `node:20-alpine` standalone bundle, Singapore free tier, `/api/healthz` health check, and auto-generated `SPINMAP_INTERNAL_SECRET`).
 
 ### Run Web App Locally (`web/`)
 

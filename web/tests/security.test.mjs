@@ -19,6 +19,7 @@ test('Security Audit: zero unsafe DOM sinks, native dialogs, or localStorage aut
     'src/app/layout.tsx',
     'src/app/page.tsx',
     'src/app/sydney/page.tsx',
+    'src/app/api/healthz/route.ts',
     'src/app/api/v1/weather/route.ts',
     'src/app/api/v1/csrf/route.ts',
     'src/app/api/v1/gpx/[slug]/route.ts',

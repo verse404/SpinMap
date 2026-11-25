@@ -48,8 +48,11 @@ export function middleware(request: NextRequest): NextResponse {
     });
   }
 
-  // 2. Enforce rate limiting & trusted origin check on BFF API endpoints
-  if (request.nextUrl.pathname.startsWith('/api/')) {
+  // 2. Enforce rate limiting & trusted origin check on BFF API endpoints (exempt /api/healthz for Render probes)
+  if (
+    request.nextUrl.pathname.startsWith('/api/') &&
+    request.nextUrl.pathname !== '/api/healthz'
+  ) {
     const forwarded = request.headers.get('x-forwarded-for');
     const clientIp = forwarded ? forwarded.split(',')[0].trim() : '127.0.0.1';
     if (!checkRateLimit(clientIp, 90, 60_000)) {

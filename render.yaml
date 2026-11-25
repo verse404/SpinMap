@@ -1,17 +1,12 @@
+# Render.com Blueprint — Sleep-Friendly Free Tier Deployment
 services:
   - type: web
     name: spinmap-web
-    runtime: node
+    runtime: docker
     plan: free
     region: singapore
-    rootDir: web
-    autoDeploy: true
-    healthCheckPath: /
-    buildCommand: npm ci --include=dev && npm test && npm run build
-    startCommand: npx next start --hostname 0.0.0.0 --port ${PORT:-10000}
+    healthCheckPath: /api/healthz
     envVars:
-      - key: NODE_VERSION
-        value: 20.20.0
       - key: NODE_ENV
         value: production
       - key: SPINMAP_INTERNAL_SECRET
