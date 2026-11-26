@@ -830,35 +830,39 @@ async function fetchBikeRouteGeometry(
   waypoints: [number, number][]
 ): Promise<{ coordinates: [number, number][]; distanceKm: number; durationMin: number }> {
   const coordParam = waypoints.map(([lng, lat]) => `${lng.toFixed(5)},${lat.toFixed(5)}`).join(';');
-  try {
-    const res = await fetch(
-      `https://routing.openstreetmap.de/routed-bike/route/v1/driving/${coordParam}?overview=full&geometries=geojson`,
-      {
-        headers: { 'User-Agent': 'SpinMap/1.0 (Visual Cycling Planner)' },
+  const endpoints = [
+    `https://routing.openstreetmap.de/routed-bike/route/v1/driving/${coordParam}?overview=full&geometries=geojson`,
+    `https://router.project-osrm.org/route/v1/bike/${coordParam}?overview=full&geometries=geojson`,
+  ];
+
+  for (const url of endpoints) {
+    try {
+      const res = await fetch(url, {
+        headers: { 'User-Agent': 'SpinMap/1.0 (+https://github.com/verse404/SpinMap)' },
         signal: AbortSignal.timeout(5000),
+      });
+      if (res.ok) {
+        const data = (await res.json()) as {
+          routes?: Array<{
+            distance?: number;
+            duration?: number;
+            geometry?: { coordinates?: [number, number][] };
+          }>;
+        };
+        const top = data.routes?.[0];
+        const coords = top?.geometry?.coordinates;
+        if (coords && coords.length >= 2) {
+          // Downsample to <= 180 points for crisp, fast client rendering & GPX export
+          const step = Math.max(1, Math.floor(coords.length / 180));
+          const sampled = coords.filter((_, idx) => idx % step === 0 || idx === coords.length - 1);
+          const distKm = Math.round(((top?.distance ?? 15000) / 1000) * 10) / 10;
+          const durMin = Math.max(20, Math.round((distKm / 18.5) * 60));
+          return { coordinates: sampled, distanceKm: distKm, durationMin: durMin };
+        }
       }
-    );
-    if (res.ok) {
-      const data = (await res.json()) as {
-        routes?: Array<{
-          distance?: number;
-          duration?: number;
-          geometry?: { coordinates?: [number, number][] };
-        }>;
-      };
-      const top = data.routes?.[0];
-      const coords = top?.geometry?.coordinates;
-      if (coords && coords.length >= 2) {
-        // Downsample to <= 180 points for crisp, fast client rendering & GPX export
-        const step = Math.max(1, Math.floor(coords.length / 180));
-        const sampled = coords.filter((_, idx) => idx % step === 0 || idx === coords.length - 1);
-        const distKm = Math.round(((top?.distance ?? 15000) / 1000) * 10) / 10;
-        const durMin = Math.max(20, Math.round((distKm / 18.5) * 60));
-        return { coordinates: sampled, distanceKm: distKm, durationMin: durMin };
-      }
+    } catch {
+      // Try next public cycling router endpoint
     }
-  } catch {
-    // Fallback to clean segment interpolation if upstream bike router times out
   }
 
   let rawDist = 0;
@@ -884,28 +888,54 @@ async function fetchElevationProfile(
     sampled.push(coords[idx]);
   }
 
+  const summarizeElevation = (rawElev: number[]) => {
+    const elev = rawElev.map((v) => Math.max(1, Math.round(Number(v) || 8)));
+    let gain = 0;
+    for (let i = 1; i < elev.length; i += 1) {
+      if (elev[i] > elev[i - 1]) {
+        gain += elev[i] - elev[i - 1];
+      }
+    }
+    return { elevProfile: elev, elevationGainM: Math.max(12, Math.round(gain * 1.25)) };
+  };
+
+  // Primary DEM: Open-Meteo Elevation
   try {
     const lats = sampled.map((c) => c[1].toFixed(4)).join(',');
     const lngs = sampled.map((c) => c[0].toFixed(4)).join(',');
     const res = await fetch(
       `https://api.open-meteo.com/v1/elevation?latitude=${lats}&longitude=${lngs}`,
-      { signal: AbortSignal.timeout(3500) }
+      {
+        headers: { 'User-Agent': 'SpinMap/1.0 (+https://github.com/verse404/SpinMap)' },
+        signal: AbortSignal.timeout(2800),
+      }
     );
     if (res.ok) {
       const json = (await res.json()) as { elevation?: number[] };
       if (Array.isArray(json.elevation) && json.elevation.length === sampleCount) {
-        const elev = json.elevation.map((v) => Math.max(1, Math.round(Number(v) || 8)));
-        let gain = 0;
-        for (let i = 1; i < elev.length; i += 1) {
-          if (elev[i] > elev[i - 1]) {
-            gain += elev[i] - elev[i - 1];
-          }
-        }
-        return { elevProfile: elev, elevationGainM: Math.max(12, Math.round(gain * 1.25)) };
+        return summarizeElevation(json.elevation);
       }
     }
   } catch {
-    // Graceful fallback profile
+    // Fall through to OpenTopoData SRTM90m
+  }
+
+  // Secondary DEM (cloud-IP resilient): OpenTopoData SRTM90m
+  try {
+    const locs = sampled.map((c) => `${c[1].toFixed(4)},${c[0].toFixed(4)}`).join('|');
+    const res = await fetch(`https://api.opentopodata.org/v1/srtm90m?locations=${locs}`, {
+      headers: { 'User-Agent': 'SpinMap/1.0 (+https://github.com/verse404/SpinMap)' },
+      signal: AbortSignal.timeout(3800),
+    });
+    if (res.ok) {
+      const json = (await res.json()) as { results?: Array<{ elevation?: number | null }> };
+      const vals = (json.results ?? []).map((r) => (typeof r.elevation === 'number' ? r.elevation : 8));
+      if (vals.length === sampleCount) {
+        return summarizeElevation(vals);
+      }
+    }
+  } catch {
+    // Graceful synthetic fallback below
   }
 
   if (fallbackTerrain === 'flat') {
