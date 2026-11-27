@@ -2,7 +2,8 @@ import path from 'node:path';
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
+  // Use standalone output for Docker/Render; let Vercel use its native serverless pipeline
+  output: process.env.VERCEL ? undefined : 'standalone',
   poweredByHeader: false,
   reactStrictMode: true,
   outputFileTracingRoot: path.resolve(import.meta.dirname),

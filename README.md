@@ -21,7 +21,14 @@ Discover curated Melbourne and Sydney bikeway loops, design custom routes starti
 
 ## Quick Start
 
-### Deploy Web App to Render (1-Click Free Blueprint)
+### Deploy Web App to Vercel (Hobby Free — Recommended for Personal Use)
+
+1. Go to [Vercel New Project](https://vercel.com/new) and import **`verse404/SpinMap`**.
+2. Set **Root Directory** to **`web`** (Vercel auto-detects `web/vercel.json`, Next.js 15, and Sydney `syd1` region).
+3. Add Environment Variable **`SPINMAP_INTERNAL_SECRET`** (any random 32+ character string, e.g. from `openssl rand -hex 32`) so CSRF tokens remain consistent across serverless instances.
+4. Click **Deploy** — zero cold starts and 0 Render container hours.
+
+### Deploy Web App to Render (Docker Blueprint)
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/verse404/SpinMap)
 

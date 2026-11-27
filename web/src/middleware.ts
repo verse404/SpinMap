@@ -12,6 +12,15 @@ function isTrustedOrigin(origin: string, request: NextRequest): boolean {
   const renderUrl = process.env.RENDER_EXTERNAL_URL?.trim().replace(/\/+$/, '');
   if (renderUrl && origin === renderUrl) return true;
 
+  const vercelUrls = [
+    process.env.VERCEL_URL,
+    process.env.VERCEL_PROJECT_PRODUCTION_URL,
+    process.env.VERCEL_BRANCH_URL,
+  ]
+    .filter((v): v is string => typeof v === 'string' && v.trim().length > 0)
+    .map((host) => `https://${host.trim().replace(/^https?:\/\//, '').replace(/\/+$/, '')}`);
+  if (vercelUrls.includes(origin)) return true;
+
   const extraOrigins = (process.env.ALLOWED_ORIGINS || '')
     .split(',')
     .map((s) => s.trim().replace(/\/+$/, ''))
