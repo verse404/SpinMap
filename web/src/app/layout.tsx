@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   title: 'SpinMap — Visual Cycling Route Explorer',
   description:
     'Discover flat, coastal, riverside, greenway, and hill cycling routes — or design a custom ride from your address with real bikeways, elevation scrubbing, and 1-tap Google Maps navigation.',
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default async function RootLayout({

@@ -3,6 +3,8 @@ import { checkRateLimit } from '@/lib/security';
 
 const READ_METHODS = new Set(['GET', 'HEAD', 'OPTIONS']);
 const POST_ALLOWED_PATHS = new Set(['/api/v1/design-route', '/api/v1/reroute']);
+const BOT_PROBE_REGEX =
+  /^\/(wp-admin|wp-login|wp-content|wp-includes|xmlrpc|phpmyadmin|cgi-bin|administrator)|\.(php|env|git|sql|bak|asp|aspx|jsp)$/i;
 
 function isTrustedOrigin(origin: string, request: NextRequest): boolean {
   if (origin === request.nextUrl.origin) return true;
@@ -37,6 +39,17 @@ function isTrustedOrigin(origin: string, request: NextRequest): boolean {
 }
 
 export function middleware(request: NextRequest): NextResponse {
+  // 0. Drop common automated scanner/probe paths immediately without running SSR
+  if (BOT_PROBE_REGEX.test(request.nextUrl.pathname)) {
+    return new NextResponse('Not Found', {
+      status: 404,
+      headers: {
+        'Cache-Control': 'public, max-age=86400',
+        'X-Robots-Tag': 'noindex, nofollow, noarchive',
+      },
+    });
+  }
+
   // 1. Enforce strict HTTP method allow-list (POST permitted only on CSRF-verified design/reroute endpoints)
   const isPostEndpoint = POST_ALLOWED_PATHS.has(request.nextUrl.pathname);
   const methodAllowed =
@@ -105,10 +118,11 @@ export function middleware(request: NextRequest): NextResponse {
   response.headers.set('X-Frame-Options', 'SAMEORIGIN');
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
   response.headers.set('Permissions-Policy', 'camera=(), microphone=(), geolocation=(self)');
+  response.headers.set('X-Robots-Tag', 'noindex, nofollow, noarchive');
 
   return response;
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon.ico|images/|maplibre/).*)'],
+  matcher: ['/((?!_next/static|_next/image|favicon.ico|robots.txt|images/|maplibre/).*)'],
 };
